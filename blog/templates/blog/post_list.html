@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Zak's Blog</title>
 </head>
 <body>
-it works <br />
-{% for p in post %}
-    <h1>{{p.title}}</h1>
-    <p>{{p.text}}</p>
 
+{% for p in posts %}
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
 {% endfor %}
 </body>
 </html>
